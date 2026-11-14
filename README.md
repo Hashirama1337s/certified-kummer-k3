@@ -2,7 +2,7 @@
 
 **For one Kummer K3 surface, a glued, hand-built geometry is proved, with interval arithmetic, to lie within an explicit distance of the true Ricci-flat one for every bubble size up to 0.03 (at most 0.121974 at 0.03), making Kobayashi's qualitative 1990 estimate explicit.**
 
-![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
+[![DOI 10.5281/zenodo.24216647](brand/doi.svg)](https://doi.org/10.5281/zenodo.24216647) ![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
 
 Moki & Julio · 2026 · version 1.0
 
@@ -115,10 +115,10 @@ inputs.
 ## How to cite
 
 ```
-Moki & Julio (2026). A computer-certified closeness bound for the Kummer K3 surface of the Hurwitz lattice. Version 1.0.
+Moki & Julio (2026). A computer-certified closeness bound for the Kummer K3 surface of the Hurwitz lattice. Version 1.0. Zenodo. https://doi.org/10.5281/zenodo.24216647
 ```
 
-Machine-readable: [CITATION.cff](CITATION.cff). Text and data: CC BY 4.0 (`LICENSE`). Code: MIT (`LICENSE-CODE`).
+The DOI always resolves to the newest archived version. Version 1.0 is 10.5281/zenodo.24216648. Machine-readable: [CITATION.cff](CITATION.cff). Text and data: CC BY 4.0 (`LICENSE`). Code: MIT (`LICENSE-CODE`).
 
 ## Related projects
 
