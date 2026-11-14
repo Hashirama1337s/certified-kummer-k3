@@ -1,0 +1,70 @@
+{
+  "upload_type": "software",
+  "title": "A computer-certified closeness bound for the Kummer K3 surface of the Hurwitz lattice",
+  "creators": [
+    {
+      "name": "Moki & Julio"
+    }
+  ],
+  "description": "<p><strong>In plain words.</strong> A K3 surface is a four-dimensional shape that carries a perfectly balanced geometry, a Ricci-flat metric, which exists by Yau's theorem but has no formula. The Kummer construction gets close by hand: fold a flat four-dimensional torus in half and smooth its 16 corner points with small Eguchi-Hanson bubbles of size a. Since 1990 it has been known that the perfect geometry is close to the glued one if a is small enough; how small and how close was never computed. We computed both and proved them with interval arithmetic.</p><p><strong>Result.</strong> For the Kummer K3 surface of the Hurwitz (D4) lattice and an explicit approximant omega_a, we prove with interval-arithmetic computer assistance that (1+d)^-1 omega_a &le; omega_CY &le; (1-d)^-1 omega_a for every bubble size a in (0, 0.03], with d(0.01) &le; 2.851e-3, d(0.03) &le; 0.121974, d(a)/a^3 &le; 2275.00 for a in (0, 1e-4] and limsup d(a)/a^3 &le; 2269.27. a0 = 0.03 is where the certificate stops (the proved range of the diameter lemma), not a limit of the method.</p><p><strong>Credit.</strong> The qualitative estimate is due to Kobayashi (1990), re-proved by Lye (2023) and improved in weighted norms by Jiang (2025); the Green-operator representation and the leading Green-sum structure are due to Fu, Xiao and Yau (arXiv:2610.11077), who state that a certified a0 remained open. An explicit-interval bound proved by hand exists for a Schoen Calabi-Yau threefold (Fu, Liu, Xiao and Yau, arXiv:2610.21932). Certified Calabi-Yau metrics on the Fermat quartic are due to Douglas, G&oacute;mez-Serrano, Lehmann, Platt and Qi (arXiv:2611.16908) and Liu and Zhang (arXiv:2611.15319).</p><p><strong>Conditions and checks.</strong> Conditional on a floating-point layer assumption (IEEE outward rounding in parts of three runs) and standard facts listed in the paper. Clean-room rebuild identical; all three load-bearing pieces (assembly, bulk residual peak, full core) replicated by blind independent code; nine hostile referee reports; algebraic steps checked in Lean. Every sealed test is listed: 8 HOLD, 3 FAILED, 4 VOID.</p><p>Prepared with AI assistance; what was checked, and by what, is stated above.</p>",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "version": "1.0",
+  "language": "eng",
+  "keywords": [
+    "K3 surface",
+    "Kummer surface",
+    "Calabi-Yau metric",
+    "Ricci-flat metric",
+    "Eguchi-Hanson",
+    "complex Monge-Ampere equation",
+    "continuity method",
+    "computer-assisted proof",
+    "interval arithmetic",
+    "rigorous numerics",
+    "differential geometry"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "references",
+      "identifier": "arXiv:2610.11077",
+      "scheme": "arxiv"
+    },
+    {
+      "relation": "references",
+      "identifier": "arXiv:2610.21932",
+      "scheme": "arxiv"
+    },
+    {
+      "relation": "references",
+      "identifier": "arXiv:2611.16908",
+      "scheme": "arxiv"
+    },
+    {
+      "relation": "references",
+      "identifier": "arXiv:2611.15319",
+      "scheme": "arxiv"
+    },
+    {
+      "relation": "references",
+      "identifier": "arXiv:2501.08491",
+      "scheme": "arxiv"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.2969/aspm/01820257",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1007/s10455-023-09898-w",
+      "scheme": "doi"
+    },
+    {
+      "relation": "isSupplementedBy",
+      "identifier": "https://github.com/Hashirama1337s/certified-kummer-k3",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Staged draft. Not uploaded. The DOI is reserved at upload; insert it into README.md (badge and citation) and CITATION.cff afterwards."
+}
