@@ -1,0 +1,8 @@
+# BAR-K1d-AMEND1 (control bars only; written and sealed before any --main run; predictions D1-D6 unchanged)
+
+Amends BAR-K1d.md (seal 4143022d85) and SPEC-K1d.md (file seal 22a13024c5). Source: BUILD-K1d.md and k1d_controls.json (build seat; controls only).
+
+1. K-ZERO, RIC part. Sealed bar 1e-8 relative; measured 6e-14 / 4.3e-8 / 3.9e-6 at a = 0.05 / 0.025 / 0.0125, all at the 5-7 "band" points where the K1c reference uses its direct region B and k1d uses the model. Evidence that the bar is below the reference's own reproducibility: k1c's region-B RIC changes by 9.2e-8 and 2.3e-6 when only its Ewald split changes (6 -> 8), same potential. With k1c's own region split, k1d matches k1c to 1.1e-13. NEW BAR: RIC relative <= 1e-5 at band points (about 4x the reference's self-noise) and <= 1e-8 at all other points. F part unchanged (<= 1e-12 absolute; measured 7.9e-18).
+2. rA rule. SPEC said: choose rA so the degree-10-vs-8 proxy is <= 1e-8. The build seat found the proxy underestimates truncation (no W(F4) harmonic invariant in degree 10; the real error grows like r^10 from a degree-12 term) and used the stricter rule "proxy AND measured degree-12 bound <= 1e-8". Adopted: rA/a = 0.20, 0.32, 0.45 for a = 0.05, 0.025, 0.0125.
+3. Noise floor note. Region-B Ricci noise just outside rA is <= 0.018 a^6 (build seat), i.e. 4e-9 of the D2 bar; F near rA at a = 0.0125 has relative noise up to 1.7e-4, which does not affect D4 (bar 1e6 a^8).
+4. Q content, recorded: Q includes the (3,3) term 4.19e4 a^8 s^3 from the R-sum in degree 6 (s = |z|^2 is itself not smooth on the resolution), as the SPEC's definition requires.

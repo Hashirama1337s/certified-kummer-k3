@@ -1,0 +1,33 @@
+08b7d89f85  2026-11-13  [K3-K1]  Second-order Kummer approximant on the Hurwitz (D4) Kummer has Monge-Ampere residual O(a^8  ->  FAILED (P1 HOLD (1.48), P2 FAILED (7.44 vs [7.5,8.5]), P3 HOLD (3.4e)
+8a8380e6ef  2026-11-13  [K3-K1b]  Corrected second-order Kummer approximant (mu shifted by -delta) on the Hurwitz Kummer has  ->  VOID (superseded before any run: BAR-K1b.md edited to add the requ)
+ad344efc9b  2026-11-13  [K3-K1b]  Corrected second-order Kummer approximant (mu shifted by -delta) on the Hurwitz Kummer has  ->  VOID (superseded before any run: seal-field format fixes only; re-)
+ff0c52846b  2026-11-13  [K3-K1b]  Corrected second-order Kummer approximant (mu shifted by -delta) on the Hurwitz Kummer has  ->  HOLD (Q1 1.045, Q2 7.996, Q3 holds at all a, Q4 6.08e-7, Q5 6.000 )
+2e69898189  2026-11-13  [K3-K1b]  bar-k1b.md, k1b.py, k1b_mp.py, k1.py  ->  open
+214e4b3168  2026-11-13  [K3-K1c]  Kummer approximant with inner cut-off (lambda = 0.1) on the Hurwitz Kummer: residual <= 2.  ->  FAILED (R1 HOLD (1.46e4 a^8), R2 FAILED (Ricci 4.4e7-7.1e7 a^6 vs 1e)  (+1 amendment)
+59ed9e745f  2026-11-13  [K3-K1c]  bar-k1c.md, spec-k1c.md  ->  open
+11fb62d874  2026-11-13  [K3-K1c]  k1c.py  ->  open
+4143022d85  2026-11-13  [K3-K1d]  Removing only the odd-odd part of the regular potential, at radius lambda a = 0.5a or a, g  ->  HOLD (D1-D6 HOLD for lambda 0.5 and 1: Ricci order 6.000, Ricci/a^)  (+1 amendment)
+22a13024c5  2026-11-13  [K3-K1d]  bar-k1d.md, spec-k1d.md  ->  open
+174b6e7f29  2026-11-13  [K3-K1d]  k1d.py  ->  open
+984fff60a3  2026-11-13  [K3-WP2a]  Rigorous enclosures of the core profile constants (sup|p|, sup R6, c6) for the C-infinity   ->  VOID (superseded before any code existed: formula_ref path fixed; )
+2d19816000  2026-11-13  [K3-WP2a]  Rigorous enclosures of the core profile constants (sup|p|, sup R6, c6) for the C-infinity   ->  FAILED (W1/W2 FAILED on literal containment of rounded constants (le)
+ba3dc16c79  2026-11-13  [K3-WP2a]  bar-wp2a.md  ->  open
+9f36f07d23  2026-11-13  [K3-WP2a]  wp2a.py  ->  open
+cdf666b973  2026-11-13  [K3-WP2b]  Certified for every a in (0,0.03]: metric perturbation e <= 1e-3, a^2||dR|| <= 1e-2, a^2 B  ->  HOLD (e<=8.34e-5; a2dR<=3.27e-3; a2B+=a2C0<=2.0000353; lb 1.999998)
+817e9a43b8  2026-11-13  [K3-WP2b]  bar-wp2b.md  ->  open
+4158aba4f8  2026-11-13  [K3-WP3]  Certified for every a in (0,0.03], outside the cores: |F| <= 18000 a^8 and |Ric| <= 1e6 a^  ->  HOLD (C_out<=17226.20; sup|F8bulk|>=16918.28; R_out<=65064.3; 3 pi)  (+1 amendment)
+61be266829  2026-11-13  [K3-WP3]  bar-wp3.md  ->  open
+6392aabef0  2026-11-14  [K3-WP2b]  wp2b.py as built, controls pass  ->  open
+cb86c3f440  2026-11-14  [K3-WP3]  wp3.py as built  ->  open
+055009634d  2026-11-14  [K3-WP5]  Route 2 assembly certified for every a in (0,0.03]: core full |F|<=15000 a^8 and |Ric|<=1.  ->  HOLD (a0=0.03; lim d2/a^3<=2269.27; d2(0.01)<=2.851e-3; d2(0.03)<=)  (+1 amendment)
+488ee8329c  2026-11-14  [K3-WP5]  WP5 BAR before code  ->  open
+891fafa2d9  2026-11-14  [K3-WP5]  wp5.py as built  ->  open
+700278e11f  2026-11-14  [K3-REP]  Blind replication: assembly leading coefficient in [2200,2340], d2(0.03) in [0.10,0.14] wi  ->  HOLD (REPLICATED: R1 lead coeff 2269.29, d(0.03) 0.121973, smallne)
+6c8fed2f34  2026-11-14  [K3-REP]  BAR before blind seats  ->  open
+93b705fabc  2026-11-14  [K3-REP3]  Blind replication of WP5 Stage A at a=0.03: sampled core max |Ric|/a^6 in [1.69e6,1731732.  ->  HOLD (REPLICATED: blind core max Ric/a^6 1695996.5, |F|/a^8 14125.)
+fa3e2bba0f  2026-11-14  [K3-REP3]  BAR before blind seat  ->  open
+a4c39ac007  2026-11-14  [K3-S2]  Stage 2 probe: Gammahat'(0)<=0.60, D'(0.03)<=1.33, re-assembly on (0,0.03] limsup d2/a^3<=  ->  HOLD (S2 CERTIFIED: Gh'(0)<=0.528165, D'(0.03)<=1.322026, D'(0)=1.)
+a0063992ad  2026-11-14  [K3-S2]  BAR before code  ->  open
+9dca3e6cc1  2026-11-14  [K3-S2]  s2.py as built  ->  open
+1e719251da  2026-11-14  [K3-S2b]  Stage 2 re-test with cancellation-free comparator: S1-S3 as BAR-S2 (regression) and S4 cer  ->  HOLD (S2b CERTIFIED: S4 30/30 vs cancellation-free float (float_re)
+70c843f630  2026-11-14  [K3-S2b]  BAR + runner before run  ->  open

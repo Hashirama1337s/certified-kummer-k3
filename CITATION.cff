@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "A computer-certified closeness bound for the Kummer K3 surface of the Hurwitz lattice"
+authors:
+  - name: "Moki & Julio"
+version: "1.0"
+repository-code: "https://github.com/Hashirama1337s/certified-kummer-k3"
+license: CC-BY-4.0
+keywords:
+  - K3 surface
+  - Kummer surface
+  - Calabi-Yau metric
+  - Ricci-flat metric
+  - Eguchi-Hanson
+  - complex Monge-Ampere equation
+  - continuity method
+  - computer-assisted proof
+  - interval arithmetic
+  - differential geometry
+  - rigorous numerics
+abstract: >-
+  A K3 surface carries a Ricci-flat metric that exists by Yau's theorem but has no formula. For the Kummer K3 surface
+  of the Hurwitz (D4) lattice, glued from a flat torus and 16 Eguchi-Hanson bubbles of size a, we prove with interval
+  arithmetic that (1+d)^-1 omega_a <= omega_CY <= (1-d)^-1 omega_a for every a in (0, 0.03], with d(0.01) <= 2.851e-3,
+  d(0.03) <= 0.121974 and limsup d/a^3 <= 2269.27. The qualitative estimate is due to Kobayashi (1990) and Lye (2023);
+  new are the explicit certified constants and interval. Conditional on a floating-point layer assumption and standard
+  facts listed in the paper. Every sealed test, including 3 FAILED, is listed. Code, data and Lean files included.

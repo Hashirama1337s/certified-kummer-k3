@@ -1,0 +1,5 @@
+H6 form check: 0
+det G - 1 numerator zero: True
+b == H*beta : True
+disc identity: True
+memcap: exit 0, peak 0.40 GB of 8.00 GB cap

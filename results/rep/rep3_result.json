@@ -1,0 +1,357 @@
+{
+ "seat": "R3",
+ "object": "K3 Kummer approximant near one bubble, cut-off window [a/4, a] (C-infinity step), core |zeta| <= 1",
+ "norm_convention": "F = log det(g_{i jbar}) with g_{i jbar} = d_i dbar_j Phi_a (det g_EH = 1, flat reference dz1^dz2); |Ric|_g = max |eigenvalue| of the endomorphism g^{-1} Ric (operator norm w.r.t. g), Ric_{i jbar} = -d_i dbar_j F",
+ "a=0.03": {
+  "n_sample_points": 21600,
+  "sampled_max_absF_over_a8": "1.412459412e+04",
+  "sampled_max_Ric_over_a6": "1.694654860e+06",
+  "refined_max_absF_over_a8": "1.412511755e+04",
+  "refined_argmax_absF_zeta_x0x1x2x3": [
+   0.0,
+   0.0,
+   0.525457,
+   0.525457
+  ],
+  "refined_argmax_absF_|zeta|": "0.743108",
+  "refined_max_Ric_over_a6": "1.695996527e+06",
+  "refined_argmax_Ric_zeta_x0x1x2x3": [
+   0.88304,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "refined_argmax_Ric_|zeta|": "0.883040",
+  "inner_|zeta|<1/4_max_absF_over_a8": "2.358999e+01",
+  "inner_|zeta|<1/4_max_Ric_over_a6": "3.749771e+02",
+  "on_E_F_over_a8": "2.327109653e+01",
+  "on_E_max_Ric_over_a6_sampled": "3.699151e+02",
+  "on_E_max_Ric_over_a6_refined": "3.750808475e+02"
+ },
+ "a=0.01": {
+  "n_sample_points": 21600,
+  "sampled_max_absF_over_a8": "1.412355471e+04",
+  "sampled_max_Ric_over_a6": "1.694581954e+06",
+  "refined_max_absF_over_a8": "1.412400039e+04",
+  "refined_argmax_absF_zeta_x0x1x2x3": [
+   0.0,
+   0.0,
+   0.525505,
+   0.525505
+  ],
+  "refined_argmax_absF_|zeta|": "0.743177",
+  "refined_max_Ric_over_a6": "1.695923370e+06",
+  "refined_argmax_Ric_zeta_x0x1x2x3": [
+   0.88304,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "refined_argmax_Ric_|zeta|": "0.883040",
+  "inner_|zeta|<1/4_max_absF_over_a8": "2.621189e+00",
+  "inner_|zeta|<1/4_max_Ric_over_a6": "4.166464e+01",
+  "on_E_F_over_a8": "2.585756807e+00",
+  "on_E_max_Ric_over_a6_sampled": "4.110218e+01",
+  "on_E_max_Ric_over_a6_refined": "4.167617513e+01"
+ },
+ "rigorous_window": {
+  "zone": "1/4 <= |zeta| <= 1, every a in [0.029, 0.03]",
+  "Ric_over_a6_upper_bound": "1.746877e+06",
+  "absF_over_a8_upper_bound": "1.483137e+04",
+  "machine_values_R_F": [
+   1746876.11660972,
+   14831.363711877995
+  ],
+  "boxes_evaluated": 507037,
+  "boxes_accepted": 245180,
+  "unresolved_boxes": 0,
+  "max_box_centre_value_Ric_a0.03": "1.695024349e+06",
+  "max_box_centre_value_absF_a0.03": "1.410690653e+04",
+  "acceptance_thresholds_R_F": [
+   1746876.4225859225,
+   14831.373427695575
+  ],
+  "accepted_param_volume_vs_initial": [
+   1.0644721314311028,
+   1.1513671875
+  ],
+  "elapsed_s": 2007.811952829361,
+  "chunks": 4
+ },
+ "Q5_samples_below_bound": {
+  "max window sample Ric/a6 (a=0.03)": "1.695996527e+06",
+  "bound_R": "1.746877e+06",
+  "ok_R": true,
+  "max window sample |F|/a8 (a=0.03)": "1.412511755e+04",
+  "bound_F": "1.483137e+04",
+  "ok_F": true
+ },
+ "controls": {
+  "coeffs": {
+   "max|P4[psi1]| (L3d: 0)": 6.248335182590381e-13,
+   "P6[psi1]/H6 ratio spread": 5.4569682106375694e-12,
+   "c6 from R=8 coefficients (= -2 ratio)": 15476.9364935608,
+   "max non-H6 coefficient in P6[psi1]": 5.375651312977681e-12,
+   "c6 rigorous enclosure (R=16 + A4 tail)": [
+    15476.850503143918,
+    15477.0225801092
+   ],
+   "max|P10[psi1]| (spec L3(g): 0)": 6.170012056827545e-09,
+   "P2[psi2] |z|^2 coefficient incl. Z2 term, relative (L3c: 0; R=5 truncation)": 3.588938444976899e-05,
+   "P4[psi2] |z|^4 coefficient (R=5) vs Z_{5/2}/4": [
+    6464.394498197016,
+    6464.396166172436
+   ],
+   "max wrong-class / right-class coefficient ratio (spec 1.5: d=2 mod 4 odd-odd, d=0 mod 4 even-even)": 2.37361883645179e-13
+  },
+  "psi_direct": [
+   {
+    "x": [
+     0.1,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "direct": -2.4523176583511846e-09,
+    "poly": -2.452317444361928e-09,
+    "rel": 8.726001487080846e-08
+   },
+   {
+    "x": [
+     0.05,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "direct": -3.709780890218097e-11,
+    "poly": -3.709775732143051e-11,
+    "rel": 1.3904007730387403e-06
+   },
+   {
+    "x": [
+     0.05,
+     0.04,
+     -0.06,
+     0.03
+    ],
+    "direct": -8.913259643213696e-10,
+    "poly": -8.913257846048392e-10,
+    "rel": 2.0162833114010144e-07
+   }
+  ],
+  "Q4_EH": {
+   "zeta: max|det g0 - 1|": 2.0605775145605078e-13,
+   "zeta: max|dd^bar log det g0|": 3.6380474289876034e-11,
+   "chart: max|F|/a^8 with E off": 0.0,
+   "chart: max |Ric|/a^6 with E off": 0.0,
+   "chart: max|dd^bar log det g0^ch| (pluriharmonic)": 2.69639353416191e-15,
+   "mp direct (FD Hessian + log det), lattice terms off: raw F, raw chart spectral radius": [
+    -3.593489191118471e-42,
+    3.284339815830007e-26
+   ]
+  },
+  "mp_direct": [
+   {
+    "a": 0.03,
+    "x": [
+     0.8830395952339551,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "jet_F/a8": -4834.974773459298,
+    "mp_F/a8": -4834.974773459302,
+    "jet_Ric/a6": 1695996.526781672,
+    "mp_Ric/a6": 1695996.5267815778,
+    "relF": 7.52429739046773e-16,
+    "relRic": 5.5462130110999627e-14
+   },
+   {
+    "a": 0.03,
+    "x": [
+     0.0,
+     0.0,
+     0.52545678628555,
+     0.52545678628555
+    ],
+    "jet_F/a8": 14125.117550188104,
+    "mp_F/a8": 14125.117550188108,
+    "jet_Ric/a6": 889133.8660628535,
+    "mp_Ric/a6": 889133.8660628509,
+    "relF": 2.575538783422914e-16,
+    "relRic": 2.8804853554093786e-15
+   },
+   {
+    "a": 0.03,
+    "x": [
+     0.5,
+     0.3,
+     -0.4,
+     0.2
+    ],
+    "jet_F/a8": -5267.340632828818,
+    "mp_F/a8": -5267.340632828821,
+    "jet_Ric/a6": 310535.28890042356,
+    "mp_Ric/a6": 310535.2889004231,
+    "relF": 5.18000314677476e-16,
+    "relRic": 1.4995438649069582e-15
+   },
+   {
+    "a": 0.03,
+    "x": [
+     0.27,
+     0.05,
+     0.03,
+     0.01
+    ],
+    "jet_F/a8": 22.942185960931468,
+    "mp_F/a8": 22.942185960932527,
+    "jet_Ric/a6": 239.15389872889247,
+    "mp_Ric/a6": 239.15389872961066,
+    "relF": 4.614680911772699e-14,
+    "relRic": 3.003037706731548e-12
+   },
+   {
+    "a": 0.01,
+    "x": [
+     0.8830396703314012,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "jet_F/a8": -4821.5407459538965,
+    "mp_F/a8": -4821.5407459538965,
+    "jet_Ric/a6": 1695923.3696330125,
+    "mp_Ric/a6": 1695923.3696329186,
+    "relF": 0.0,
+    "relRic": 5.5327234162012317e-14
+   },
+   {
+    "a": 0.01,
+    "x": [
+     0.0,
+     0.0,
+     0.5255054744075607,
+     0.5255054744075607
+    ],
+    "jet_F/a8": 14124.000390300156,
+    "mp_F/a8": 14124.00039030016,
+    "jet_Ric/a6": 889482.4899790758,
+    "mp_Ric/a6": 889482.4899790745,
+    "relF": 2.5757424996887864e-16,
+    "relRic": 1.5705580240889088e-15
+   },
+   {
+    "a": 0.01,
+    "x": [
+     0.5,
+     0.3,
+     -0.4,
+     0.2
+    ],
+    "jet_F/a8": -5298.894404967821,
+    "mp_F/a8": -5298.894404967826,
+    "jet_Ric/a6": 310424.15182423854,
+    "mp_Ric/a6": 310424.15182423854,
+    "relF": 8.581928910682365e-16,
+    "relRic": 0.0
+   },
+   {
+    "a": 0.01,
+    "x": [
+     0.27,
+     0.05,
+     0.03,
+     0.01
+    ],
+    "jet_F/a8": 2.549199822173635,
+    "mp_F/a8": 2.5491998221737524,
+    "jet_Ric/a6": 36.34036289944737,
+    "mp_Ric/a6": 36.340362902998315,
+    "relF": 4.599072633719395e-14,
+    "relRic": 9.771351037046145e-11
+   }
+  ],
+  "chart_overlap": {
+   "a=0.03": {
+    "max rel diff F (zeta vs chart, 0.12<|zeta|<0.25)": 1.1368909393744322e-12,
+    "max rel diff Ric": 8.07944159457658e-09,
+    "F/a^10 on E (a->0 limit Z_{5/2} = 25857.584665, spec L4(c))": 25856.77392010184
+   },
+   "a=0.01": {
+    "max rel diff F (zeta vs chart, 0.12<|zeta|<0.25)": 1.1375623563158947e-12,
+    "max rel diff Ric": 8.08032828712859e-09,
+    "F/a^10 on E (a->0 limit Z_{5/2} = 25857.584665, spec L4(c))": 25857.56806596721
+   }
+  },
+  "symmetry": {
+   "z1->i z1 (in G_J)": {
+    "max rel |dF|": 3.7969826565310524e-14,
+    "max rel |dRic|": 4.527210793156317e-14
+   },
+   "swap z1,z2 (in G_J)": {
+    "max rel |dF|": 3.0573025141947363e-13,
+    "max rel |dRic|": 5.710264820175477e-14
+   },
+   "conj both (in G_J)": {
+    "max rel |dF|": 2.3879303612943684e-14,
+    "max rel |dRic|": 8.764246120126025e-15
+   },
+   "x0<->x1 only (W, not G_J)": {
+    "max rel |dF|": 0.12322537051884327,
+    "max rel |dRic|": 0.7676662695219113
+   },
+   "right mult by (1+i+j+k)/2 (W; commutes with J, so in G_J)": {
+    "max rel |dF|": 1.597043151308496e-13,
+    "max rel |dRic|": 4.923532276732291e-14
+   },
+   "left mult by (1+i+j+k)/2 (W, not G_J)": {
+    "max rel |dF|": 0.2066838968652033,
+    "max rel |dRic|": 1.6229786322538495
+   }
+  },
+  "E_refined": {
+   "a=0.03": {
+    "max_Ric_over_a6_on_E": 375.08084745635097,
+    "argmax_w": [
+     0.36602544114167407,
+     -0.36602544114167407
+    ],
+    "max_Ric_over_a8_on_E": 416756.4971737233,
+    "F_over_a10_on_E": 25856.77392010184
+   },
+   "a=0.01": {
+    "max_Ric_over_a6_on_E": 41.676175130483095,
+    "argmax_w": [
+     0.36602544114167407,
+     -0.36602544114167407
+    ],
+    "max_Ric_over_a8_on_E": 416761.75130483095,
+    "F_over_a10_on_E": 25857.56806596721
+   }
+  },
+  "old_window": {
+   "window": "[a/2, a] (spec v2 design), a = 0.01, positive control",
+   "absF": {
+    "max": 25289.952431364665,
+    "argmax_x": [
+     2.4269681171044477e-06,
+     -9.225350843749974e-07,
+     3.1049264737330044e-06,
+     0.7968464991298455
+    ],
+    "|zeta|": 0.7968464991401246
+   },
+   "Ric": {
+    "max": 9349843.551329209,
+    "argmax_x": [
+     -0.4587477813539985,
+     0.458739761831743,
+     -0.45874959386537945,
+     0.4587405798041357
+    ],
+    "|zeta|": 0.9174888584682352
+   }
+  }
+ }
+}

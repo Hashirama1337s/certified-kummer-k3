@@ -1,0 +1,184 @@
+{
+ "mode": "controls",
+ "python_flint": "0.9.0",
+ "arb_prec_bits": 128,
+ "C1_sup_p_quintic": {
+  "reference_json": 9.26055627355853,
+  "reference_argmax_zeta": 0.7471953171996938,
+  "retyped_reference_double": 9.26055627355853,
+  "production_formula_double": 9.260556273558494,
+  "production_argmax_zeta": 0.7471953207862774,
+  "diff_retyped": 0.0,
+  "diff_production": 3.552713678800501e-14,
+  "PASS_1e-9": true
+ },
+ "C2_R6_formula": {
+  "quintic": {
+   "retyped": 2.3030466422824247e-12,
+   "retyped_accurate_step": 2.3030466422824247e-12
+  },
+  "cinf": {
+   "retyped": 9.538867013780816e-05,
+   "retyped_accurate_step": 7.038813976123492e-14
+  },
+  "quintic_axis_0.75362_x_c6doc": 2633433.236314712,
+  "quintic_axis_0.755_x_c6doc": 2632612.9093863238,
+  "doc_values": {
+   "0.75362": 2633430.0,
+   "0.755": 2632610.0
+  }
+ },
+ "C3_symmetry": {
+  "W_order": 1152,
+  "GJ_order": 192,
+  "GJ_holomorphic": 96,
+  "orbit_of_p": 192,
+  "cone_normals": 191,
+  "R6_max_rel_change_under_GJ": 4.2543746303636e-13,
+  "R6_max_rel_change_under_W_minus_GJ": 3.234660123903388,
+  "random_dirs_with_image_in_cone": "3000/3000",
+  "initial_direction_boxes_kept": 67,
+  "of": 4096
+ },
+ "C4_mutation": {
+  "logistic_path": {
+   "factor_1": {
+    "violations": 0,
+    "tested": 65,
+    "first": []
+   },
+   "factor_0.5": {
+    "violations": 50,
+    "tested": 65,
+    "first": [
+     [
+      0.02,
+      1
+     ],
+     [
+      0.02,
+      2
+     ],
+     [
+      0.02,
+      3
+     ],
+     [
+      0.02,
+      4
+     ],
+     [
+      0.05,
+      1
+     ],
+     [
+      0.05,
+      2
+     ]
+    ]
+   }
+  },
+  "lemmaC_endpiece": {
+   "factor_1": {
+    "violations": 0,
+    "tested": 80
+   },
+   "factor_0.5": {
+    "violations": 0,
+    "tested": 80
+   },
+   "factor_0.25": {
+    "violations": 0,
+    "tested": 80
+   },
+   "factor_0.125": {
+    "violations": 4,
+    "tested": 80
+   },
+   "max_true_over_bound": 0.2160619612348209,
+   "note": "Lemma C (C5) has slack >= 4.63 on end pieces b <= 1/8, so halving the bound cannot be detected by any point comparison; the detector fires for factors below 0.216"
+  },
+  "pipeline_unmutated": {
+   "quintic": {
+    "R6_points_tested": 4500,
+    "R6_violations": 0,
+    "R6_max_excess_rel(negative=inside)": -0.0016578511512500111,
+    "p_points_tested": 300,
+    "p_violations": 0
+   },
+   "cinf": {
+    "R6_points_tested": 4500,
+    "R6_violations": 0,
+    "R6_max_excess_rel(negative=inside)": -0.0033827730936207986,
+    "p_points_tested": 300,
+    "p_violations": 0
+   }
+  },
+  "pipeline_mutated_st_derivs_x0.5": {
+   "quintic": {
+    "R6_points_tested": 4500,
+    "R6_violations": 2297,
+    "R6_max_excess_rel(negative=inside)": 0.5802206110559134,
+    "p_points_tested": 300,
+    "p_violations": 286
+   },
+   "cinf": {
+    "R6_points_tested": 4500,
+    "R6_violations": 1747,
+    "R6_max_excess_rel(negative=inside)": 0.5474854338486665,
+    "p_points_tested": 300,
+    "p_violations": 261
+   }
+  }
+ },
+ "C5_nan_inf": {
+  "check_finite_on_nan": true,
+  "check_finite_on_inf": true,
+  "a2f_on_nonfinite_arb": true,
+  "eval_boxes_nan_box": true,
+  "eval_boxes_nan_radial": true,
+  "lemmaC_endpiece_too_wide_refused": true,
+  "all_PASS": true
+ },
+ "C6_timing": {
+  "P_quintic_certified_seconds": 0.006324291229248047,
+  "P_quintic_certified": {
+   "lower": "9.2605562735540818048",
+   "upper": "9.2605562735964940260",
+   "argmax_abs_zeta": 0.7471952438354492,
+   "complete": true,
+   "evaluations": 240
+  },
+  "R_seed_seconds": 7.759565114974976,
+  "R_quintic_reduced": {
+   "tol_rel": 0.0001,
+   "done": true,
+   "lower_c6=1": 170.1520984080739,
+   "upper_c6=1": 170.16910732488003,
+   "seed_lower": 170.1520984080739,
+   "iterations": 80,
+   "boxes_evaluated": 2448912,
+   "seconds": 87.28926396369934,
+   "argmax": {
+    "T": 0.5072453640211841,
+    "abs_zeta": 0.753622682010592,
+    "direction": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "times_c6_doc_15476.9366": [
+    2633433.239418721,
+    2633696.485345764
+   ]
+  },
+  "c6_ewald_reduced_seconds": 0.0045239925384521484,
+  "c6_direct_R8_seconds": 0.018633604049682617,
+  "c6_direct_R20_estimate_seconds": 0.7278751581907272
+ },
+ "peak_rss_GB_process": 0.772820992,
+ "seconds_total": 91.35782742500305,
+ "ALL_CONTROLS_PASS": true
+}

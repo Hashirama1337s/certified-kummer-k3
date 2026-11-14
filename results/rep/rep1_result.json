@@ -1,0 +1,180 @@
+{
+ "seat": "R1",
+ "spec": "ANALYSIS-CHAIN.md Thm 2 (sec 9), Prop C0 (sec 4), Lemma G (sec 3), closure (sec 7); DEFINITIONS-v2 L5",
+ "arith": "python-flint arb ball arithmetic; strings are upper bounds rounded up",
+ "controls": {
+  "gammahat0_G_upper_h2^-11": "4.530846915",
+  "gammahat0_G_upper_h2^-10": "4.530889035",
+  "gammahat0_G_T_over_D2": "0.788574",
+  "gammahat0_G_c0T": "0.171783",
+  "gammahat0_expl_27e_over_16": "4.587100586",
+  "Q1_d2_a1e-3_spec_eta1eta2": "0.00000293066",
+  "Q1_d2_a1e-3_eta2both": "0.00000293066",
+  "Q1_d2_a1e-2_spec_eta1eta2": "0.00359404",
+  "Q1_d2_a1e-2_eta2both": "0.00359404",
+  "Q1_table_targets_R2_DL5_expl": {
+   "1e-3": "2.931e-6",
+   "1e-2": "3.594e-3"
+  }
+ },
+ "limit_d2_over_a3_upper": {
+  "LemmaG": "2269.2912",
+  "LemmaG_coarse_h2^-10": "2269.3017",
+  "expl": "2283.3351",
+  "LemmaG_if_e_to_0": "2269.1359",
+  "expl_if_e_to_0": "2283.1789"
+ },
+ "d2_over_a3_small_a_rule_x": {
+  "1e-3_G": "2326.5886",
+  "1e-3_expl": "2340.9830",
+  "1e-4_G": "2275.0203",
+  "1e-4_expl": "2289.0993",
+  "1e-5_G": "2269.8641",
+  "1e-5_expl": "2283.9116"
+ },
+ "d2_upper": {
+  "a0.03_G_rule": "0.12197295",
+  "a0.03_G_opt": "0.12197295",
+  "a0.03_expl_rule": "0.12271502",
+  "a0.03_expl_opt": "0.12271501",
+  "a0.01_G_rule": "0.0028510341",
+  "a0.01_G_opt": "0.0028510341",
+  "a0.01_expl_rule": "0.0028686004",
+  "a0.01_expl_opt": "0.0028686004",
+  "a0.03_G_rule_coarse_h2^-10": "0.12197348"
+ },
+ "smallness_a0.03": {
+  "G_rule": {
+   "M2(2,2kappa)e^eta_upper": "1.1612989",
+   "lt_2": true
+  },
+  "G_opt": {
+   "M2(2,2kappa)e^eta_upper": "1.1612989",
+   "lt_2": true
+  },
+  "expl_rule": {
+   "M2(2,2kappa)e^eta_upper": "1.1622232",
+   "lt_2": true
+  },
+  "expl_opt": {
+   "M2(2,2kappa)e^eta_upper": "1.1622232",
+   "lt_2": true
+  }
+ },
+ "details": {
+  "a0.03_G_rule": {
+   "eta": "2.2604222E-8",
+   "D_L5": "1.775178649",
+   "Gamma(kappa,D)": "16.553403",
+   "o_at_t1": "0.0000014725652",
+   "x_at_t1": "1.009680198",
+   "Lambda_star_iterations": 18,
+   "smallness_M2_e^eta": "1.1612989",
+   "hypotheses": {
+    "Cq_a8_lt_1": true,
+    "e_eta_lt_3": true,
+    "fourC0_gt_sigma": true
+   }
+  },
+  "a0.03_G_opt": {
+   "eta": "2.2604222E-8",
+   "D_L5": "1.775178649",
+   "Gamma(kappa,D)": "16.553403",
+   "o_at_t1": "0.0000014725652",
+   "x_at_t1": "1.009632158",
+   "Lambda_star_iterations": 18,
+   "smallness_M2_e^eta": "1.1612989",
+   "hypotheses": {
+    "Cq_a8_lt_1": true,
+    "e_eta_lt_3": true,
+    "fourC0_gt_sigma": true
+   }
+  },
+  "a0.03_expl_rule": {
+   "eta": "2.2604222E-8",
+   "D_L5": "1.775178649",
+   "Gamma(kappa,D)": "16.720094",
+   "o_at_t1": "0.0000014895775",
+   "x_at_t1": "1.009624761",
+   "Lambda_star_iterations": 18,
+   "smallness_M2_e^eta": "1.1622232",
+   "hypotheses": {
+    "Cq_a8_lt_1": true,
+    "e_eta_lt_3": true,
+    "fourC0_gt_sigma": true
+   }
+  },
+  "a0.03_expl_opt": {
+   "eta": "2.2604222E-8",
+   "D_L5": "1.775178649",
+   "Gamma(kappa,D)": "16.720094",
+   "o_at_t1": "0.0000014895775",
+   "x_at_t1": "1.009576446",
+   "Lambda_star_iterations": 18,
+   "smallness_M2_e^eta": "1.1622232",
+   "hypotheses": {
+    "Cq_a8_lt_1": true,
+    "e_eta_lt_3": true,
+    "fourC0_gt_sigma": true
+   }
+  },
+  "a0.01_G_rule": {
+   "eta": "3.4452403E-12",
+   "D_L5": "1.268620245",
+   "Gamma(kappa,D)": "7.3203003",
+   "o_at_t1": "1.0082856E-10",
+   "x_at_t1": "1.004814193",
+   "Lambda_star_iterations": 10,
+   "smallness_M2_e^eta": "1.0034968",
+   "hypotheses": {
+    "Cq_a8_lt_1": true,
+    "e_eta_lt_3": true,
+    "fourC0_gt_sigma": true
+   }
+  },
+  "a0.01_G_opt": {
+   "eta": "3.4452403E-12",
+   "D_L5": "1.268620245",
+   "Gamma(kappa,D)": "7.3203003",
+   "o_at_t1": "1.0082856E-10",
+   "x_at_t1": "1.004814178",
+   "Lambda_star_iterations": 10,
+   "smallness_M2_e^eta": "1.0034968",
+   "hypotheses": {
+    "Cq_a8_lt_1": true,
+    "e_eta_lt_3": true,
+    "fourC0_gt_sigma": true
+   }
+  },
+  "a0.01_expl_rule": {
+   "eta": "3.4452403E-12",
+   "D_L5": "1.268620245",
+   "Gamma(kappa,D)": "7.4104279",
+   "o_at_t1": "1.0207608E-10",
+   "x_at_t1": "1.004784684",
+   "Lambda_star_iterations": 10,
+   "smallness_M2_e^eta": "1.0035182",
+   "hypotheses": {
+    "Cq_a8_lt_1": true,
+    "e_eta_lt_3": true,
+    "fourC0_gt_sigma": true
+   }
+  },
+  "a0.01_expl_opt": {
+   "eta": "3.4452403E-12",
+   "D_L5": "1.268620245",
+   "Gamma(kappa,D)": "7.4104279",
+   "o_at_t1": "1.0207608E-10",
+   "x_at_t1": "1.004784669",
+   "Lambda_star_iterations": 10,
+   "smallness_M2_e^eta": "1.0035182",
+   "hypotheses": {
+    "Cq_a8_lt_1": true,
+    "e_eta_lt_3": true,
+    "fourC0_gt_sigma": true
+   }
+  }
+ },
+ "precision_256_vs_512_agree_1e-12": true,
+ "runtime_s": 7.5
+}
