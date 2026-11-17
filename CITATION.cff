@@ -3,7 +3,7 @@ message: "If you use this work, please cite it as below."
 title: "A computer-certified closeness bound for the Kummer K3 surface of the Hurwitz lattice"
 authors:
   - name: "Moki & Julio"
-version: "1.0"
+version: "1.0.1"
 doi: "10.5281/zenodo.24216647"
 date-released: "2026-11-14"
 repository-code: "https://github.com/Hashirama1337s/certified-kummer-k3"

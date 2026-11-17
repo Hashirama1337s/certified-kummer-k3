@@ -53,3 +53,9 @@ repository (the double-precision probe scripts and two earlier reference outputs
 - `stage2/s2.py`, `stage2/s2b.py`: the Stage 2 sharpened bound (not the main theorem). They read the WP2a, WP2b, WP3
   and WP5 results from `K3_ROOT` (default: the parent of their folder), like wp5.py; results and verdicts in
   `results/stage2/`.
+
+## Figures
+
+The two README figures are drawn from shipped files only: `python figures/make_figures.py .` from the repository root
+(Python 3.11, matplotlib 3.11; seconds; reads only shipped files). It rewrites `figures/*.svg`; two runs give
+byte-identical SVGs.

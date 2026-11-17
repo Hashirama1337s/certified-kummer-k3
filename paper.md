@@ -2,7 +2,7 @@
 
 **Moki & Julio**
 
-Draft version 1.0 (staged, not released). Every number below is traced to a result file of the accompanying code in
+Version 1.0.1 (2026-11-17). Every number below is traced to a result file of the accompanying code in
 `CLAIMS.md`; certified upper bounds are printed rounded up, lower bounds rounded down.
 
 ---
@@ -137,7 +137,7 @@ Full definitions, statements and proofs are in the companion document `docs/DEFI
 - **Diameter (L5).** For a ≤ 0.03 and positivity defect e < 1,
   diam(X, g_R) ≤ D(a, e) = sqrt(2(1 + e)) [4a + (17/16)^{1/4} (1/sqrt 2 + 12(π − 2)a)].
 
-The construction uses the Green-sum structure that Fu, Xiao and Yau identified for the Kummer surface (Section 8);
+The construction uses the Green-sum structure that Fu, Liu, Xiao and Yau identified for the Kummer surface (Section 8);
 what we add is a global closed-form potential with explicit cores, on the Hurwitz lattice, whose constants are
 certified.
 
@@ -342,14 +342,14 @@ bound (1+d)^-1 ω_a ≤ ω_CY ≤ (1−d)^-1 ω_a, valid for every bubble size a
 and d(0.03) ≤ 0.122. To our knowledge (arXiv and Zenodo searched to 13 Nov 2026), this is the first explicit closeness
 bound with computed constants on a Kummer K3 surface. The qualitative estimate of this type is due to Kobayashi [1990,
 eq. (38), Thm 18], re-proved by Lye [2023, Thm 2.9, §6] and improved in weighted norms by Jiang [2025]. The convergent
-Green-operator representation and the leading Green-sum structure of the correction are due to Fu-Xiao-Yau
+Green-operator representation and the leading Green-sum structure of the correction are due to Fu-Liu-Xiao-Yau
 [arXiv:2610.11077], who state that a certified value of a0 remained open. An explicit-interval bound of the same kind,
 proved by hand, exists for a special Schoen Calabi-Yau threefold (Fu-Liu-Xiao-Yau [arXiv:2610.21932], 0 < a ≤ 2^-2260).
 Certified Calabi-Yau metrics on the Fermat quartic, a different K3 at a fixed Kähler class, are due to
 Douglas-Gómez-Serrano-Lehmann-Platt-Qi [arXiv:2611.16908] and Liu-Zhang [arXiv:2611.15319].
 
 Further context. Kobayashi and Lye work with an approximant of residual order a^4 (our units) and unspecified
-constants; Fu, Xiao and Yau work on the square lattice and certify no number. Donaldson's and Shackleton's gluing
+constants; Fu, Liu, Xiao and Yau work on the square lattice and certify no number. Donaldson's and Shackleton's gluing
 constructions are qualitative.
 
 ## 9. Reproducibility
@@ -360,6 +360,31 @@ re-runs the chain in the documented order (WP2a, WP2b, WP3 through its amendment
 result with the shipped one. Requirements: Python 3.11, python-flint 0.9.0, numpy, mpmath. The full chain takes
 about 35 to 70 minutes on one core (clean room about 36 minutes; release re-run about 67 minutes on a shared machine); the assembly alone, from the shipped inputs, about one minute.
 
+## 10. Open doors
+
+What this work leaves open, and what we noticed and did not follow up. "Open as far as our dated search found" reports our
+own prior-art search; "UNTESTED" marks an observation of ours that we did not test.
+
+- **a0 beyond 0.03.** a0 is set by L5 (Section 1; Section 7), not by the smallness condition (U ≤ 1.1694 < 2). A sharper
+  diameter lemma, with the certified inputs (WP2b, WP3) recomputed on a larger range, could extend the window; not
+  attempted. *Status:* UNTESTED observation from this work.
+- **The aligned family.** Qualitative closeness for unequal sizes is due to Kobayashi [Kob] and Lye [Lye, Thm 2.9,
+  under the bounded size ratio of Assumption 2.8], with constants not computed. We found no explicit constant, explicit
+  parameter box or certificate uniform over lattice parameters or unequal sizes. In the parametrisation of [Jia, Thm 1.2]
+  (10 + 3 × 16 = 58), aligned bubbles leave 10 + 2 + 16 = 28 parameters, the stratum a fixed-complex-structure
+  (Monge-Ampère) chain can address. *Status:* open as far as our dated search found (2026-11-17; arXiv, Zenodo, web,
+  citers of [Jia]).
+- **Relative bubble rotations.** The full 58-parameter family is [Jia, Thm 1.2], qualitative; [Jia, Sec. 1] notes that
+  fixing one complex structure does not give enough parameters. The remaining directions need a hyperkähler-triple chain
+  with an explicit, a-uniform inverse bound for the linearised triple operator (Newton-Kantorovich in place of the maximum
+  principle). Unchecked idea: on a hyperkähler background the triple linearisation may reduce, up to a perturbation, to
+  three scalar Laplacians, whose gap Stage 2 bounds [AC]. *Status:* open as far as our dated search found (2026-11-17;
+  arXiv, Zenodo, web, citers of [Jia]).
+- **Other Kummer-type gluings.** The zone split of WP2b (bubble core, window, bulk) and the WP5 assembly should transfer to
+  T^4/G gluings with an explicit single-bubble metric and a lattice Green term (for example T^4/Z_3 with A_2 bubbles). The
+  bulk residual extremum of WP3/REP2 sits at the midpoints l/2 between neighbouring bubbles (code/rep/rep2/rep2.py);
+  such symmetric-point extrema may recur in other gluings. *Status:* UNTESTED observation from this work.
+
 ## References
 
 Only sources opened during this work are listed.
@@ -367,9 +392,12 @@ Only sources opened during this work are listed.
 - [Kob] R. Kobayashi, Adv. Stud. Pure Math. 18-II (1990), 257-311. doi:10.2969/aspm/01820257 (eqs. (31), (38),
   (47); Thm 18).
 - [LY] Li and Yau, Acta Math. 156 (1986), Thm 2.3, pp. 168-169, and the proof of Cor 2.1, p. 170.
-- [Lye] Lye, Ann. Global Anal. Geom. 63:20 (2023). doi:10.1007/s10455-023-09898-w (Thm 2.9; §6, eq. (6.10)).
-- [Jia] Jiang, arXiv:2501.08491, version 2 (Thm 1.1; Remark 1.3).
-- [FXY] Fu, Xiao and Yau, arXiv:2610.11077, version 2 (Thm 5.6; Prop 5.5; Sec 6.7).
+- [Lye] Lye, Ann. Global Anal. Geom. 63:20 (2023). doi:10.1007/s10455-023-09898-w (Assumption 2.8; Thm 2.9; §6, eq. (6.10)).
+- [Jia] Jiang, arXiv:2501.08491, version 2 (Thm 1.1; Remark 1.3; Thm 1.2; Sec. 1, pp. 3-4).
+- [FLXY-K] J. Fu, J. Liu, Y. Xiao and S.-T. Yau, "Explicit Ricci-flat Metrics on Kummer K3 Surfaces", arXiv:2610.11077,
+  version 2 (Thm 5.6; Prop 5.5; Sec 6.7). Version 1 (8 Oct 2026) lists three authors (Fu, Xiao, Yau). Version 2 (15 Oct
+  2026, "Added an author") lists four on the PDF, although arXiv's metadata still shows three. *Correction 2026-11-17:
+  author list updated.*
 - [FLXY] Fu, Liu, Xiao and Yau, arXiv:2610.21932, version 1 (Thm 1.1; Thm 6.3).
 - [DGS] Douglas, Gómez-Serrano, Lehmann, Platt and Qi, arXiv:2611.16908, version 1 (Thm 1.1).
 - [LZ] Liu and Zhang, arXiv:2611.15319, version 1 (Thm A; Thm B).
